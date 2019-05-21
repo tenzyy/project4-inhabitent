@@ -3,3 +3,27 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+}
+
+// journal
+.blog {
+    .entry-header {
+        position: relative;
+     
+
+    }
+    .entry-title {
+        position: absolute;
+        top:20px;
+        left: 0;
+        background-color: #248A83;
+    }
+    .entry-meta {
+        position: absolute;
+        bottom:8px;
+        right:0;
+        background-color: #248A83
+    
+    }
+}

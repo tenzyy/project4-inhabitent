@@ -420,22 +420,25 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: white; }
   a:visited {
-    color: purple; }
+    color: #f0e4d1; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #f0e4d1; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
 
+a {
+  background-color: #248A83; }
+
 /* Menus */
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  float: right;
+  background: transparent; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -478,18 +481,21 @@ a {
   .main-navigation ul {
     display: block; } }
 
-.site-main .comment-navigation, .site-main
+.site-main 3
+.comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5rem;
   overflow: hidden; }
 
+3
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%; }
 
+3
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -670,3 +676,22 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+a {
+  text-decoration: none;
+  font-size: 15pt;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #248A83; }
+
+.blog .entry-header {
+  position: relative; }
+
+.blog .entry-title {
+  position: absolute;
+  top: 20px;
+  left: 0; }
+
+.blog .entry-meta {
+  position: absolute;
+  bottom: 8px;
+  right: 225px;
+  background-color: #248A83; }
