@@ -10,6 +10,9 @@ ehthumbs.db
 *.Trashes
 
 # Ignore packages #
+
+
+
 # =============== #
 *.7z
 *.dmg

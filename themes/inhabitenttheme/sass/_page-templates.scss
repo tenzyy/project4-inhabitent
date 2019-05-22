@@ -4,13 +4,11 @@
 
 /* Front page */
 
-}
 
 // journal
 .blog {
     .entry-header {
         position: relative;
-     
 
     }
     .entry-title {
@@ -23,7 +21,16 @@
         position: absolute;
         bottom:8px;
         right:0;
-        background-color: #248A83
+        // background-color: #248A83;
     
     }
+    .journal-entry{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .fp-journal, h1{
+        text-align: center;
+    }
+
 }

@@ -430,15 +430,10 @@ a {
   a:hover, a:active {
     outline: 0; }
 
-a {
-  background-color: #248A83; }
-
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
-  float: right;
-  background: transparent; }
+  display: block; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -481,21 +476,18 @@ a {
   .main-navigation ul {
     display: block; } }
 
-.site-main 3
-.comment-navigation, .site-main
+.site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5rem;
   overflow: hidden; }
 
-3
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%; }
 
-3
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -676,22 +668,39 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-a {
-  text-decoration: none;
-  font-size: 15pt;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #248A83; }
-
 .blog .entry-header {
   position: relative; }
 
 .blog .entry-title {
   position: absolute;
   top: 20px;
-  left: 0; }
+  left: 0;
+  background-color: #248A83; }
 
 .blog .entry-meta {
   position: absolute;
   bottom: 8px;
-  right: 225px;
-  background-color: #248A83; }
+  right: 0; }
+
+.blog .journal-entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.blog .fp-journal, .blog h1 {
+  text-align: center; }
+
+.page-about .hero-image-header {
+  height: 100vh;
+  width: 100%;
+  background-color: red; }
+
+.page-front-page {
+  background-color: purple; }
+
+page-about {
+  background: red; }
