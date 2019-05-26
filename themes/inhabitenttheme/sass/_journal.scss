@@ -1,0 +1,38 @@
+
+// journal 
+.blog {
+    .content-area {
+        padding: 48px;
+    }
+
+    .entry-header {
+        position: relative;
+    }
+
+    .entry-title {
+        position: absolute;
+        top:15px;
+        padding:15px;
+        background-color: #248A83;
+      
+        a{
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+    .entry-meta {
+        position: absolute;
+        bottom:8px;
+        right:24%;
+        background-color: #248A83;
+    
+    }
+    .entry-content{
+        p {
+            width: 80%;
+        }
+ 
+    }
+
+
+}

@@ -29,6 +29,7 @@ a {
 /* Menus */
 
 .main-navigation {
+	text-align: right;
 	clear: both;
 	display: block;
 
@@ -79,16 +80,14 @@ a {
 	li {
 		float: left;
 		position: relative;
-
 		&:hover > a,
 		&.focus > a {
 		}
 	}
 	a {
 		display: block;
-		text-decoration: none;
+		
 	}
-
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
@@ -98,7 +97,8 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display:block;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -130,3 +130,4 @@ a {
 		width: 50%;
 	}
 }
+

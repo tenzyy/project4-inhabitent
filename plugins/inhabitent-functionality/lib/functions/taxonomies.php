@@ -9,26 +9,26 @@
 function Inhabitent_tax_product_type() {
 
 	$labels = array(
-		'name'                       => 'Produt Types',
+		'name'                       => 'Product Types',
 		'singular_name'              => 'Product Type',
 		'menu_name'                  => 'Product Types',
 		'all_items'                  => 'All Product Types',
 		'parent_item'                => 'Parent Product Type',
 		'parent_item_colon'          => 'Parent Product Type:',
-		'new_item_name'              => 'New Prodcut Type Name',
-		'add_new_item'               => 'Add New Prodcut Type',
-		'edit_item'                  => 'Edit Prodcut Type',
-		'update_item'                => 'Update Prodcut Type',
-		'view_item'                  => 'Prodcut Type',
-		'separate_items_with_commas' => 'Separate Prodcut Type with commas',
-		'add_or_remove_items'        => 'Add or remove Prodcut Type',
+		'new_item_name'              => 'New Product Type Name',
+		'add_new_item'               => 'Add New Product Type',
+		'edit_item'                  => 'Edit Product Type',
+		'update_item'                => 'Update Product Type',
+		'view_item'                  => 'Product Type',
+		'separate_items_with_commas' => 'Separate Product Type with commas',
+		'add_or_remove_items'        => 'Add or remove Product Type',
 		'choose_from_most_used'      => 'Choose from the most used',
-		'popular_items'              => 'Popular Prodcut Type',
-		'search_items'               => 'Search Prodcut Type',
+		'popular_items'              => 'Popular Product Type',
+		'search_items'               => 'Search Product Type',
 		'not_found'                  => 'Not Found',
-		'no_terms'                   => 'No Prodcut Type',
-		'items_list'                 => 'Prodcut Type list',
-		'items_list_navigation'      => 'Prodcut Type list navigation',
+		'no_terms'                   => 'No Product Type',
+		'items_list'                 => 'Product Type list',
+		'items_list_navigation'      => 'Product Type list navigation',
 	);
 	$args = array(
 		'labels'                     => $labels,
@@ -40,7 +40,7 @@ function Inhabitent_tax_product_type() {
 		'show_tagcloud'              => true,
 		'show_in_rest'               => true,
 	);
-	register_taxonomy( 'Product-type', array( 'product' ), $args );
+	register_taxonomy( 'product-type', array( 'product' ), $args );
 
 }
 add_action( 'init', 'Inhabitent_tax_product_type', 0 );

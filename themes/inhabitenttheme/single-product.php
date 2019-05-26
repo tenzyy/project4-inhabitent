@@ -38,23 +38,28 @@ get_header(); ?>
 
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
+		
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-<?php echo CFS()->get( 'product_price' ); ?>
+<p class ="single-price">
+<?php echo CFS()->get( 'product_price' ); ?></p>
 
+<div class="single-product-description">
+<?php the_content(); ?></div>
+
+<div class ="media-share-btn">
+	<button class="facebook"><i class="">facebook</button>
+	<button class="facebook"><i class="">facebook</button>
+	<button class="facebook"><i class="">facebook</button>
+			</div>
 			<?php the_post_navigation(); ?>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+		
 
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

@@ -14,7 +14,7 @@ function inhabitent_post_type() {
 		'singular_name'         => 'Product',
 		'menu_name'             => 'Products',
 		'name_admin_bar'        => 'Products',
-		'archives'              => 'Producct Archives',
+		'archives'              => 'Product Archives',
 		'attributes'            => 'Product Attributes',
 		'parent_item_colon'     => 'Parent Product:',
 		'all_items'             => 'All Products',
@@ -52,12 +52,13 @@ function inhabitent_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,
+		'has_archive'           => 'product',
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
         'show_in_rest'          => true,
-        'template_lock'         => 'all',
+		'template_lock'         => 'all',
+		
         'template'              => array(
             array('core/paragraph', array(
                 'placeholder' => 'Add the product description here.'

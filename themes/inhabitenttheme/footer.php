@@ -15,7 +15,7 @@
 				</div><!-- .site-info -->
 		<!-- #colophon -->
 		</div><!-- #page -->
-     <div class ="contactfooter">
+     <!-- <div class ="contactfooter">
 		 Contact Info
 		 <ul>
 		 <li>info@inhabitent.co
@@ -29,7 +29,7 @@ Business Hours
 	<li>Saturday: 10am to 2pm
 
 <li>Sunday: Closed</ul>
-</div>
+</div> -->
 
 		<?php wp_footer(); ?>
 		</footer>

@@ -1,0 +1,27 @@
+
+.blog,
+.page-find-us {
+* {
+    box-sizing: border-box;
+  }
+  
+  .site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+  }
+  
+  .site-content {
+    flex-grow: 1;
+    display: flex;
+  }
+  
+  .content-area {
+    width: 75%;
+  }
+  
+  .widget-area {
+    width: 25%;
+  }
+}

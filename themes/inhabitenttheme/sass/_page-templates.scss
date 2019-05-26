@@ -2,35 +2,111 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
 
 
-// journal
-.blog {
-    .entry-header {
-        position: relative;
-
+.site-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .logo-green {
+        display: block;
     }
-    .entry-title {
+    .logo-white {
+        display: none;
+    }
+}
+
+.home, 
+.page-about {
+    .site-header{
         position: absolute;
-        top:20px;
-        left: 0;
-        background-color: #248A83;
+        background:transparent;
+        width:100%;
+        z-index: 100;
+        .logo-green {
+            display: none;
+        }
+        .logo-white {
+            display: block;
+        }
     }
-    .entry-meta {
-        position: absolute;
-        bottom:8px;
-        right:0;
-        // background-color: #248A83;
-    
-    }
-    .journal-entry{
-        display: flex;
-        flex-direction: row;
-        
-    }
-    .fp-journal, h1{
-        text-align: center;
-    }
+}
+
+
+
+
+
+// front page 
+   //  hero banner
+   .header-logo{
+    height: 50px;
+    width: 50px;
 
 }
+body {
+     .site-description{
+        display: none;
+
+    }
+}
+
+.home {
+   
+.home-banner{
+    position: relative;
+    background-image: url(../../assets/images/home-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+    .hero-logo{
+        position: absolute;
+            top: 200px;
+            left: 250px;
+    }
+} 
+// products-logo and terms
+
+.product-terms{
+    @include center-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   text-align: center;
+
+        .product-term{
+            width: 20%;
+            height: 25%;
+            border:1px solid #e1e1e1;    
+            padding: 12px;       
+            img{
+                justify-content: center;
+                width: 70px;
+                height: 70px;
+            }
+            a{
+                border: 1px solid #e1e1e1;
+                padding: 10px;
+                text-decoration: none;
+            }
+        
+        }      
+}
+// blog posts journal entries 
+.fp-journal-entries{
+    @include center-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: sapce-between;}
+ h1{
+        text-align: center;
+        position: relative;
+        
+} 
+.read-more-btn{
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+// shop page
+
