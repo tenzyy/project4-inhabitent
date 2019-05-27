@@ -225,6 +225,55 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+/**
+ * Sample @font-face rules for Merriweather
+ * 
+ * Usage:
+ * Copy these rules into the appropriate Sass partial and update the file paths as needed
+ *
+*/
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../assets/fonts/merriweather-light-webfont.eot");
+  src: url("../../assets/fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/merriweather-light-webfont.woff2") format("woff2"), url("../../assets/fonts/merriweather-light-webfont.woff") format("woff"), url("../../assets/fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../assets/fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../assets/fonts/merriweather-lightitalic-webfont.eot");
+  src: url("../../assets/fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../../assets/fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../../assets/fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../../assets/fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../assets/fonts/merriweather-bold-webfont.eot");
+  src: url("../../assets/fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/merriweather-bold-webfont.woff") format("woff"), url("../../assets/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../assets/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../assets/fonts/merriweather-bolditalic-webfont.eot");
+  src: url("../../assets/fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../assets/fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../../assets/fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../../assets/fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url("../../assets/fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../assets/fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../assets/fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../assets/fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../assets/fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url("../../assets/fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../../assets/fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../assets/fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../assets/fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../assets/fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -234,7 +283,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Merriweather Web" sans-serif;
+  font-family: "Merriweather Web", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -771,6 +820,55 @@ h1 {
   border: 1px solid gray;
   padding: 10px; }
 
+#colophon {
+  background-image: url(../../assets/images/dark-wood@2x.png);
+  background-size: cover;
+  height: auto;
+  width: 100%; }
+  #colophon p {
+    color: white; }
+  #colophon .footerbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 20px; }
+
+h3 {
+  color: #d99054;
+  text-transform: uppercase;
+  font-family: "novecentosanswide", sans-serif;
+  font-size: 1.2rem; }
+
+a,
+.copyrighttext {
+  text-decoration: none;
+  color: white; }
+
+.footerlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .footerlogo img {
+    margin-top: 50px;
+    width: 300px; }
+
+.copyright {
+  background-image: url(../../assets/images/dark-wood@2x.png);
+  background-size: cover;
+  height: 100px;
+  width: 100%; }
+  .copyright p {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "novecentosanswide", sans-serif; }
+
 .page-about .hero-image-header {
   height: 100vh; }
 
@@ -817,6 +915,8 @@ h1 {
   position: absolute;
   top: 15px;
   padding: 15px;
+  font-family: "novecentosanswide", sans-serif;
+  width: 50%;
   background-color: #248A83; }
   .blog .entry-title a {
     color: white;
@@ -830,3 +930,6 @@ h1 {
 
 .blog .entry-content p {
   width: 80%; }
+
+.archive img {
+  width: 2; }

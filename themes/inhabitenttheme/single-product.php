@@ -11,18 +11,18 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
         <?php while ( have_posts() ) : the_post(); ?>
-        
+
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
+			<?php the_post_thumbnail( 'medium' ); ?>
 		<?php endif; ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
+		<p class ="single-price">
+<?php echo CFS()->get( 'product_price' ); ?></p>
+		
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -34,6 +34,11 @@ get_header(); ?>
 				'after'  => '</div>',
 			) );
 		?>
+		<div class ="media-share-btn">
+	<button class="facebook"><i class="fab fa-facebook-f"></i>Like</button>
+	<button class="twitter"><i class="fab fa-twitter"></i>Tweet</button>
+	<button class="pinterest"><i class="fab fa-pinterest"></i>Pin</button>
+			</div>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
@@ -41,18 +46,10 @@ get_header(); ?>
 		
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-<p class ="single-price">
-<?php echo CFS()->get( 'product_price' ); ?></p>
 
-<div class="single-product-description">
-<?php the_content(); ?></div>
 
-<div class ="media-share-btn">
-	<button class="facebook"><i class="">facebook</button>
-	<button class="facebook"><i class="">facebook</button>
-	<button class="facebook"><i class="">facebook</button>
-			</div>
-			<?php the_post_navigation(); ?>
+
+
 
 		
 

@@ -6,32 +6,43 @@
  */
 
 ?>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-			</div><!-- #content -->
+	</div><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-				</div><!-- .site-info -->
-		<!-- #colophon -->
-		</div><!-- #page -->
-     <!-- <div class ="contactfooter">
-		 Contact Info
-		 <ul>
-		 <li>info@inhabitent.co
-		 <li>778-456-7891</ul>
-</div>
-<div class ="hoursfooter">
-Business Hours
-<ul>
-	<li>Monday-Friday: 9am to 5pm
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				
 
-	<li>Saturday: 10am to 2pm
+	<div class="footerbox">
 
-<li>Sunday: Closed</ul>
-</div> -->
+    	 <div class ="contact">
+		 	<h3>Contact Info</h3>
+			<p><i class="fas fa-envelope"></i> <a href="mailto:info@inhabitent.com"> info@inhabitent.com</a></p>
+			<p class ="teleicon"><i class="fas fa-phone"></i>  778-456-7891</a></p>
+			<p> <i class="fab fa-facebook-square"></i>
+				<i class="fab fa-twitter-square"></i>
+				<i class="fab fa-google-plus-square"></i></p>
+		</div>
+		<div class ="hours">
+			<h3>Business Hours</h3>
+ 			<p><b>Monday-Friday</b>: 9am to 5pm</p>
+			<p><b>Saturday</b>: 10am to 2pm</p>
+			<p><b>Sunday</b>: Closed</p>
+		</div>
+		<div class="footerlogo">
+			<img class ="header-logo logo-green" src="<?php echo get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-text.svg'?>" />
+		</div>
+	</div>	
+	<div class="copyright">
+				<p>copyright &copy; 2019 inhabitent</p>
+			</div>
 
-		<?php wp_footer(); ?>
-		</footer>
-	</body>
+	
+	</footer>
+	<!-- #colophon -->
+	</div>
+	 <!-- #page -->
+	<?php wp_footer(); ?>		
+</body>
+
 </html>

@@ -50,3 +50,17 @@ function inhabitent_body_class_for_pages( $classes ) {
     return $classes;
 }
 add_filter( 'body_class', 'inhabitent_body_class_for_pages' );
+
+function inhabitent_posts_on_page( $query ) {
+	if ( is_admin() || ! $query->is_main_query() ){
+		return;
+	}
+	//list order for product archive page
+    if ( is_post_type_archive( 'product' )||is_tax('product_type') ) {
+		$query->set('orderby','title');
+		$query->set( 'posts_per_page', 16 );
+		$query->set( 'order','ASC');
+        return;
+    }
+}
+add_action( 'pre_get_posts', 'inhabitent_posts_on_page', 1 );

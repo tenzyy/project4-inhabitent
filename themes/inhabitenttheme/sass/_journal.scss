@@ -13,11 +13,13 @@
         position: absolute;
         top:15px;
         padding:15px;
+        font-family: $font__second;
+        width: 50%;
         background-color: #248A83;
-      
         a{
             color: white;
             text-transform: uppercase;
+
         }
     }
     .entry-meta {
@@ -30,9 +32,6 @@
     .entry-content{
         p {
             width: 80%;
-        }
- 
-    }
-
+        }  }
 
 }

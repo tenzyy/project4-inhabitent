@@ -1,0 +1,53 @@
+
+#colophon{
+    background-image: url(../../assets/images/dark-wood@2x.png );
+    background-size: cover;;
+    height: auto;
+    width: 100%;
+    p{
+        color: white;
+    }
+.footerbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+}
+   h3{
+       color:#d99054;
+       text-transform: uppercase;
+        font-family: $font__second;
+       font-size: 1.2rem;
+    
+   }
+   a,
+   .copyrighttext {
+       text-decoration: none;
+       color: white;
+   }
+  .footerlogo{
+     display: flex;
+     img{
+         margin-top: 50px;
+         width: 300px;
+     }
+  }
+
+.copyright{
+    background-image: url(../../assets/images/dark-wood@2x.png );
+    background-size: cover;;
+    height: 100px;
+    width: 100%;
+   p{
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-family:$font__second;
+
+    }
+}
+  
+
+
+  
