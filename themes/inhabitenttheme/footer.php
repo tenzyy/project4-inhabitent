@@ -6,9 +6,10 @@
  */
 
 ?>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-	</div><!-- #content -->
+
+</div><!-- #content -->
+	
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				
@@ -18,7 +19,7 @@
     	 <div class ="contact">
 		 	<h3>Contact Info</h3>
 			<p><i class="fas fa-envelope"></i> <a href="mailto:info@inhabitent.com"> info@inhabitent.com</a></p>
-			<p class ="teleicon"><i class="fas fa-phone"></i>  778-456-7891</a></p>
+			<p><i class="fas fa-phone"></i>  778-456-7891</a></p>
 			<p> <i class="fab fa-facebook-square"></i>
 				<i class="fab fa-twitter-square"></i>
 				<i class="fab fa-google-plus-square"></i></p>
@@ -32,10 +33,12 @@
 		<div class="footerlogo">
 			<img class ="header-logo logo-green" src="<?php echo get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-text.svg'?>" />
 		</div>
-	</div>	
-	<div class="copyright">
+
+		<div class="copyright">
 				<p>copyright &copy; 2019 inhabitent</p>
 			</div>
+
+	</div>	
 
 	
 	</footer>

@@ -10,10 +10,23 @@
 .footerbox{
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap;
     justify-content: space-around;
     padding: 20px;
-}
-}
+
+    .copyright{
+        width: 100%;
+        p{
+            color: white;
+            padding-top: 48px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family:$font__second;
+    
+        }
+    
+    }
+
    h3{
        color:#d99054;
        text-transform: uppercase;
@@ -33,20 +46,11 @@
          width: 300px;
      }
   }
-
-.copyright{
-    background-image: url(../../assets/images/dark-wood@2x.png );
-    background-size: cover;;
-    height: 100px;
-    width: 100%;
-   p{
-        color: white;
-        text-align: center;
-        text-transform: uppercase;
-        font-family:$font__second;
-
-    }
 }
+}
+
+
+
   
 
 

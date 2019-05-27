@@ -1,0 +1,111 @@
+
+.home, 
+.page-about {
+    .site-header{
+        position: absolute;
+        background:transparent;
+        width:100%;
+        z-index: 100;
+        .logo-green {
+            display: none;
+        }
+        .logo-white {
+            display: block;
+        }
+    }
+}
+
+.home {
+    .home-banner{
+        position: relative;
+        background-image: url(../../assets/images/home-hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+        .hero-logo{
+            position: absolute;
+                top: 200px;
+                left: 250px;
+        }
+
+
+    // products-logo and terms
+    .products{
+        h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $font__second;
+        padding: 30px;
+        font-size: 2.4rem;
+        font-weight: 400;
+
+    }
+}
+    .product-terms{
+        @include center-block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+            .product-term{
+                width: 20%;
+                height: 25%;
+                border:1px solid #e1e1e1;    
+                padding: 12px;       
+                img{
+                    justify-content: center;
+                    width: 70px;
+                    height: 70px;
+                }
+                a{
+                    border: 1px solid #e1e1e1;
+                    padding: 10px;
+                    font-family: $font__second;
+                    color: white;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    background:#248a83
+                }
+            
+                
+            }  
+            
+    }
+    .fp-journal{
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-family:$font__second;
+            padding: 30px;
+        }
+    }
+    .fp-journal-entries{
+        display: flex;
+        flex-direction: row;
+        max-width: 1120px;
+        justify-content: space-between;
+        margin: 0 auto;
+        
+        .journal-entry{
+            margin: 10px;
+        
+        }
+        .post-title{
+            font-family: $font__second;
+        }
+        .button{
+            border: 1px solid gray;
+            padding: 10px;
+            display:inline-block;
+            font-family: $font__second;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+           
+        }
+    }
+    
+ 
+
+
+}
