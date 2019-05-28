@@ -48,11 +48,6 @@ get_header(); ?>
 </article><!-- #post-## -->
 
 
-
-
-
-		
-
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->

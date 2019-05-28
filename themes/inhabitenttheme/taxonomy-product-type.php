@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Archieve product page
+ * Template Name: Taxonomy product page
  *
  * @package RED_Starter_Theme
  */
@@ -9,39 +9,19 @@ get_header(); ?>
 <hr>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		<div class="product-header">
-		<header class="page-header"><h1><b>Shop Stuff</b></h1>
-	
-		<?php 
-                $terms = get_terms( 
-                    array( 
-                        'taxonomy' => 'product-type', 
-                        'hide_empty' => 0
-                    )
-                 );
-                 ?>
-		
-		<?php
-                    foreach( $terms as $term ):
-                    ?>
-                        <div class="product-term">
-                            <p>
-                                <a href="<?php echo get_term_link( $term ); ?>">
-                                    <?php echo $term->name; ?>
-                                </a>
-                            </p>
-                        </div>
-                    <?php    
-                    endforeach;
-                    ?></div>
 
+		<div class="taxonomy-header">
+		<header class="taxonomy-page">
+	
+		<h1><?php the_archive_title( '<h1 class="page-title">', '</h1>' );?></h1>
+		<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
 		<?php if ( have_posts() ) : ?>
 
 				
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<div class="shop-area">
+			<div class="product-type">
 			
 			<?php while ( have_posts() ) : the_post();  ?>
             
@@ -50,7 +30,7 @@ get_header(); ?>
 					<?php if ( has_post_thumbnail() ) : ?>
 					<?php the_post_thumbnail( 'large' ); ?>
 				<?php endif; ?>
-			
+		
 				</header><!-- .entry-header -->
 				<div class="product-meta"
 				<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
@@ -58,8 +38,7 @@ get_header(); ?>
 				<?php echo CFS()->get( 'product_price' ); ?></p>
 				</div>
 			<!-- .entry-content -->
-			</article><!-- #post-## -->
-				
+			</article><!-- #post-## -->	
 			
 
 			<?php endwhile; ?>
