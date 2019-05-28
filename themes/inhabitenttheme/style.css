@@ -563,7 +563,7 @@ a {
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
-    color: #21759b;
+    color: #2f1339;
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
@@ -595,8 +595,8 @@ a {
   clear: both;
   max-width: 1200px;
   display: block;
-  margin-left: auto;
-  margin-right: auto; }
+  margin-left: 0 auto;
+  margin-right: 0 auto; }
 
 /*--------------------------------------------------------------
 # Clearings
@@ -676,8 +676,8 @@ object {
   .wp-caption img[class*="wp-image-"] {
     max-width: 1200px;
     display: block;
-    margin-left: auto;
-    margin-right: auto; }
+    margin-left: 0 auto;
+    margin-right: 0 auto; }
   .wp-caption .wp-caption-text {
     margin: 0.8075rem 0; }
 
@@ -738,6 +738,32 @@ object {
 
 body .site-description {
   display: none; }
+
+.page
+.find-us,
+article {
+  max-width: 1120px;
+  margin: 0 auto; }
+  .page
+.find-us .wpcf7-form input,
+  .page
+.find-us .wpcf7-form textarea,
+  article .wpcf7-form input,
+  article .wpcf7-form textarea {
+    border-radius: 0px;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1; }
+  .page
+.find-us .wpcf7-form label,
+  article .wpcf7-form label {
+    text-transform: uppercase;
+    font-family: "novecentosanswide", sans-serif;
+    color: #2f1339; }
+    .page
+.find-us .wpcf7-form label .required,
+    article .wpcf7-form label .required {
+      color: #D99054;
+      size: 0.5rem; }
 
 #colophon {
   background-image: url(../../assets/images/dark-wood@2x.png);
@@ -981,8 +1007,8 @@ body .site-description {
 .home .product-terms {
   max-width: 1200px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1044,3 +1070,38 @@ body .site-description {
     font-family: "novecentosanswide", sans-serif;
     text-transform: uppercase;
     font-size: 0.9rem; }
+
+.single-product article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 100px; }
+  .single-product article .image-wrap {
+    width: 48%; }
+    .single-product article .image-wrap img {
+      padding-left: 80px; }
+  .single-product article .single-product-meta {
+    width: 50%;
+    margin-bottom: 10px; }
+  .single-product article .single-product-title {
+    color: #d99054;
+    text-transform: uppercase;
+    font-family: "novecentosanswide", sans-serif;
+    font-size: 2.4rem; }
+    .single-product article .single-product-title .single-price {
+      font-size: 1.8rem;
+      font-family: "novecentosanswide", sans-serif; }
+  .single-product article .media-share-btn button {
+    background: transparent;
+    text-align: center;
+    padding-bottom: 10px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0px;
+    font-size: 0.9rem;
+    font-family: "novecentosanswide", sans-serif;
+    text-transform: uppercase; }

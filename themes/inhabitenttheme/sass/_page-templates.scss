@@ -15,14 +15,10 @@
     }
 }
 
-
-
-
    //  hero banner
    .header-logo{
     height: 50px;
     width: 50px;
-
 }
 body {
      .site-description{
@@ -30,6 +26,41 @@ body {
 
     }
 }
+.page
+.find-us,
+article {
+    max-width: 1120px;
+    margin: 0 auto;
+   
+    .wpcf7-form{
+        input,
+        textarea {
+            border-radius: 0px;
+            background-color:#f4f4f4;
+            border:1px solid #e1e1e1;
+            // margin-left: 25px;
+            
+        }
+    label{
+        text-transform: uppercase;
+        font-family: $font__second;
+        color:$color__text-screen;
+        // margin-left: 25px;
+        // margin-bottom: 5px;
+        .required{
+            color: #D99054;
+            size: 0.5rem;
+        }
+    }
+    .entry-content{
+        
+    }
+       
+ }
+}
+ 
+
+
 
 
 

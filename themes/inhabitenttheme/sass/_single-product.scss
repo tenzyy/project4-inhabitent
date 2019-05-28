@@ -1,0 +1,44 @@
+
+    
+.single-product{
+    article {
+        display:flex;
+        justify-content: space-between;
+        padding-top:50px;
+        padding-bottom:100px;
+        .image-wrap {
+            width: 48%;
+            img{
+                padding-left:80px;
+            }
+        }
+        .single-product-meta{
+            width: 50%;
+            margin-bottom: 10px;
+        }
+        .single-product-title{
+            color:#d99054;
+            text-transform: uppercase;
+            font-family: $font__second;
+            font-size: 2.4rem;
+            .single-price{
+                font-size: 1.8rem;
+                font-family: $font__second;
+            }
+        }
+        .media-share-btn{
+            button{
+                background:transparent;
+                text-align: center;
+                padding-bottom: 10px;
+                color: black;
+                border: 1px solid black;
+                border-radius: 0px;
+                font-size:0.9rem;
+                font-family: $font__second;
+                text-transform: uppercase;
+                }
+            }
+    }
+        
+}
