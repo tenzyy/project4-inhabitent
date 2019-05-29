@@ -31,7 +31,23 @@ a {
 .main-navigation {
 	text-align: right;
 	clear: both;
-	display: block;
+	.menu-main-menu-container{
+		display:inline-block;
+	
+		.menu{
+			padding-top:8px;
+			display:inline-block;
+			a{
+				text-transform:uppercase;
+				color:#248a83;
+				font-size: 1rem;
+				font-family: $font__second;
+				margin-right: 1rem;
+
+			}
+		}
+	}
+	
 
 	ul {
 		display: none;

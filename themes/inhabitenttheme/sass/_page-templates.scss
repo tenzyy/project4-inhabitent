@@ -7,12 +7,33 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom:1px solid #e1e1e1;
     .logo-green {
         display: block;
     }
     .logo-white {
         display: none;
     }
+    .header-search{
+        display:inline-block;
+        .search-form{
+            display:inline-block;
+        .search-field{
+            display:none;
+            background:transparent;
+            border:none;
+            outline:none;
+        }
+        .search-submit{
+            background:transparent;
+            border:none;
+            box-shadow: none;
+            text-shadow:none;
+            color:#248a83;
+        }
+
+    }
+}
 }
 
    //  hero banner
@@ -26,39 +47,93 @@ body {
 
     }
 }
-.page
-.find-us,
-article {
-    max-width: 1120px;
-    margin: 0 auto;
-   
+
+// find us page-- 
+.page-find-us {
+    .site-main{
+      padding:40px;
+    }
+    h1{
+        text-align: left;
+        text-transform: uppercase;
+        font-family: $font__second;
+        font-size: 1.9rem;
+        font-weight: 600;
+       
+    }
+    h3{
+        text-align: left;
+        color: $color__text-screen;
+        text-transform: uppercase;
+        font-family: $font__second;
+        font-size: 1.9rem;
+        font-weight: 600;
+        margin: 0;
+    }
     .wpcf7-form{
+        padding:40px;
         input,
         textarea {
             border-radius: 0px;
             background-color:#f4f4f4;
             border:1px solid #e1e1e1;
-            // margin-left: 25px;
-            
         }
+        .wpcf7-submit{
+            border-radius:none;
+            border:none;
+            box-shadow:none;
+        
+            text-shadow: none;
+            background-color: #248a83;
+            text-transform: uppercase;
+            font-family: $font__second;
+            color:white;
+            padding: 0.7rem 1rem;
+            &:hover{
+                background-color:#24473f;
+            }
+        }
+        
+    }
     label{
         text-transform: uppercase;
         font-family: $font__second;
         color:$color__text-screen;
-        // margin-left: 25px;
-        // margin-bottom: 5px;
+        margin-bottom: 5px;
         .required{
             color: #D99054;
             size: 0.5rem;
         }
-    }
-    .entry-content{
-        
+    }      
     }
        
- }
-}
  
+// 404 page
+.error404{
+    .content-area{
+        padding:48px;
+    }
+    h1,h2{
+        text-align: left;
+        color: $color__text-screen;
+        text-transform: uppercase;
+        font-family: $font__second;
+    }
+    
+    .page-content{
+        ul{
+            list-style:none;
+            margin-left:0;
+            padding-left:0;
+            a{
+                color:#248a83;
+            }
+        }
+        .search-submit{
+            display: none;
+        }
+    }
+}
 
 
 

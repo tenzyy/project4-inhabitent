@@ -45,9 +45,10 @@ get_header(); ?>
                     <?php    
                     endforeach;
                     ?>
-                </div><!-- .product-terms -->
+                </div>
+               
         </section>
-
+ <!-- end of product-terms -->
 
 			<section class="fp-journal">
                 <h1>Inhabitent Journal</h1>
@@ -85,9 +86,17 @@ get_header(); ?>
                         <?php endforeach; wp_reset_postdata(); ?>
                     </div>
                     
-                </div><!-- .fp-journal-entries -->
+                </div>
             </section>
-
+<!--  end fp-journal-entries -->
+            <section class="latest-adventure">
+                <h1>Latest Adventures</h1>
+                <div class="adventure-box">
+                <h2>Getting back to nature in a canoe</h2>
+                <h2>A night with friends at the beach</h2>
+                <h2>Taking the view at big mountain</h2>
+                <h2>Star- gazing at the night sky</h2>
+                </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

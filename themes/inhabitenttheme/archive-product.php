@@ -9,20 +9,21 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<hr>
-		<div class="product-header">
-		<header class="page-header"><h1><b>Shop Stuff</b></h1>
 	
-		<?php 
-                $terms = get_terms( 
-                    array( 
+			<div class="product-header">
+				<header class="page-header"><h1><b>Shop Stuff</b></h1>
+	
+				<?php 
+                	$terms = get_terms( 
+                    	array( 
                         'taxonomy' => 'product-type', 
                         'hide_empty' => 0
-                    )
-                 );
-                 ?>
-		
-		<?php
+                    	)
+                 	);
+				?>
+				
+				<div class="tax-box">
+					<?php
                     foreach( $terms as $term ):
                     ?>
                         <div class="product-term">
@@ -34,42 +35,42 @@ get_header(); ?>
                         </div>
                     <?php    
                     endforeach;
-                    ?></div>
-
-		<?php if ( have_posts() ) : ?>
+					?>
+				</div>
+				</header><!-- .page-header -->
+			</div>
+			<?php if ( have_posts() ) : ?>
 
 				
-			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<div class="shop-area">
 			
-			<?php while ( have_posts() ) : the_post();  ?>
+				<?php while ( have_posts() ) : the_post();  ?>
             
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<header class="entry-header">
-					<?php if ( has_post_thumbnail() ) : ?>
-					<?php the_post_thumbnail( 'large' ); ?>
-				<?php endif; ?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<header class="entry-header">
+						<?php if ( has_post_thumbnail() ) : ?>
+						<?php the_post_thumbnail( 'large' ); ?>
+						<?php endif; ?>
 			
-				</header><!-- .entry-header -->
-				<div class="product-meta"
-				<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-				<div class="dots"></div>
-				<?php echo CFS()->get( 'product_price' ); ?></p>
-				</div>
-			<!-- .entry-content -->
-			</article><!-- #post-## -->
+					</header><!-- .entry-header -->
+					<div class="product-meta">
+						<?php the_title( sprintf( '<h2 class="product-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+						<p><?php echo CFS()->get( 'product_price' ); ?></p>
+					</div>
+					<!-- .entry-content -->
+				</article><!-- #post-## -->
 				
 			
 
-			<?php endwhile; ?>
-		</div><!-- shop area -->
+				<?php endwhile; ?>
+			</div><!-- shop area -->
 			
-		<?php else : ?>
-            <?php get_template_part( 'template-parts/content', 'none' ); ?>  
+			<?php else : ?>
+            	<?php get_template_part( 'template-parts/content', 'none' ); ?>  
     
-		<?php endif; ?>
+			<?php endif; ?>
 
 
 		</main><!-- #main -->

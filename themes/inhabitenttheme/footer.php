@@ -19,7 +19,7 @@
     	 <div class ="contact">
 		 	<h3>Contact Info</h3>
 			<p><i class="fas fa-envelope"></i> <a href="mailto:info@inhabitent.com"> info@inhabitent.com</a></p>
-			<p><i class="fas fa-phone"></i>  778-456-7891</a></p>
+			<p><i class="fas fa-phone"></i><a href="tel:+17884567891">778-456-7891</a></p>
 			<p> <i class="fab fa-facebook-square"></i>
 				<i class="fab fa-twitter-square"></i>
 				<i class="fab fa-google-plus-square"></i></p>
