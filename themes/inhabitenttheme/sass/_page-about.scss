@@ -6,6 +6,11 @@
            height: 100vh;
        }
 .site-header{
+   .menu-item{
+   a{
+    color:white;
+   } 
+   } 
     border:none;
 }
 .entry-title{
@@ -17,6 +22,20 @@
     font-size: 2.4rem;
     font-weight: 600;
 }
+.about-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+        h2{
+            text-align: center;
+            font-size:2.1rem;
+            color: $color__text-screen;
+            text-transform: uppercase;
+            font-family: $font__second;
+            letter-spacing: 3px;
+           margin-bottom: 1.5rem;
+        }
+    }
 
 }
 

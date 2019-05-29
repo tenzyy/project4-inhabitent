@@ -22,6 +22,7 @@
       margin: 0 auto;
       font-family: $font__second;
     }
+    a{color: #248a83;}
   }
   .product-term {
     display:inline-block;
@@ -47,7 +48,7 @@
         border-bottom: 5px #efefef solid;
       }
       .product-meta {
-          color:#248a83;
+       
         display: flex;
         align-items: center;
         p{
