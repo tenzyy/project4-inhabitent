@@ -763,7 +763,7 @@ object {
         -webkit-box-shadow: none;
                 box-shadow: none;
         text-shadow: none;
-        color: white; }
+        color: #248A83; }
 
 .header-logo {
   height: 50px;
@@ -804,7 +804,7 @@ body .site-description {
     -webkit-box-shadow: none;
             box-shadow: none;
     text-shadow: none;
-    background-color: #248a83;
+    background-color: #248A83;
     text-transform: uppercase;
     font-family: "novecentosanswide", sans-serif;
     color: white;
@@ -835,7 +835,7 @@ body .site-description {
   margin-left: 0;
   padding-left: 0; }
   .error404 .page-content ul a {
-    color: #248a83; }
+    color: #248A83; }
 
 .error404 .page-content .search-submit {
   display: none; }

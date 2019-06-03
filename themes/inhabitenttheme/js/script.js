@@ -11,7 +11,5 @@ $(".search-field").on("blur",function(event){
 $(".search-field").hide("slow")});
 
 
-//  put all codes in here
-// $('body').append('works');
     
 })(jQuery); // end of js file

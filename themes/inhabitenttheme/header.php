@@ -25,7 +25,7 @@
 	
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-				<a href="http://localhost:3000/inhabitant/">
+				<a href="<?php echo home_url(); ?>">
 					<img class ="header-logo logo-green" src="<?php echo get_template_directory_uri() .
 	 '/assets/images/logos/inhabitent-logo-tent.svg'?>" />
 	 <img class ="header-logo logo-white" src="<?php echo get_template_directory_uri() .

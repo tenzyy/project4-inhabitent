@@ -11,7 +11,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
     <!--  your banner html -->
     <div class= "home-banner">
-    <img class="hero-logo" src="<?php echo get_template_directory_uri() . 
+    <img class="hero-logo" alt="forest-hero" src="<?php echo get_template_directory_uri() . 
                                         '/assets/images/logos/inhabitent-logo-full.svg' ?>" />   
                                         </div>                               
 	<section class ="products">

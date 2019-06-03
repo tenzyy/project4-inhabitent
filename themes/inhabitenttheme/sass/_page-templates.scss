@@ -29,9 +29,8 @@
             border:none;
             box-shadow: none;
             text-shadow:none;
-            color:white;
+            color:$color__main;
         }
-
     }
 }
 }
@@ -84,7 +83,7 @@ body {
             box-shadow:none;
         
             text-shadow: none;
-            background-color: #248a83;
+            background-color:$color__main;
             text-transform: uppercase;
             font-family: $font__second;
             color:white;
@@ -126,7 +125,7 @@ body {
             margin-left:0;
             padding-left:0;
             a{
-                color:#248a83;
+                color:$color__main;
             }
         }
         .search-submit{
