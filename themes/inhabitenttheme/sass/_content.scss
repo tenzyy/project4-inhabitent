@@ -47,3 +47,18 @@
 .bypostauthor {
 	display: block;
 }
+
+	.read-more{
+		@include main-font-style;
+		text-shadow: none;
+		background: transparent;
+		padding: 10px;
+		display: inline-block;
+		font-size:0.9rem;
+		&:hover{
+		  background-color:$color__main;
+		  a{
+			color: white;
+		  }
+	  }
+	}

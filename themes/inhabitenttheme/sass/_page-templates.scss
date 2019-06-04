@@ -10,14 +10,22 @@ body {
 //    fixed header 
 .page-find-us,
 .blog,
-.archive {
+.archive,
+.single-post,
+.single-product,
+.error404 {
     .site-header{
     background-color: hsla(0,0%,100%,.85);
     border-bottom: 1px solid #e1e1e1;
     position: fixed;
     width: 100%;
     z-index: 3;
+    .logo-white{
+        display: none;
     }
+
+    }
+
  .fixed-header{
      display: flex;
      flex-direction: row;
@@ -30,9 +38,7 @@ body {
     height: 50px;
     width: 50px;
 }
-.logo-white {
-    display: none;
-}
+
 .search-form {
         display:inline-block;
     .search-field{
@@ -47,13 +53,11 @@ body {
         box-shadow: none;
         text-shadow:none;
         color:$color__main;
-    }
-   
+    } 
 }
 }
     
 //  --- end of header ---
-
 
 
 //-- find us page-- 
@@ -83,9 +87,9 @@ body {
     }      
 }
        
- 
 // 404 page
 .error404{
+    .logo-white{display: none;}
     .content-area{
         padding:48px;
     }
@@ -95,7 +99,6 @@ body {
         color: $color__text-screen;
     
     }
-    
     .page-content{
         ul{
             list-style:none;
@@ -110,10 +113,4 @@ body {
         }
     }
 }
-
-
-
-
-
-// shop page
 

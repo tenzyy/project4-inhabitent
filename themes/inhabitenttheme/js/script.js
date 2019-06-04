@@ -8,6 +8,7 @@ $(".icon-search").on("click",function(event){
 
 $(".search-field").on("blur",function(event){
     event.preventDefault();
+   
 $(".search-field").hide("slow")});
 
 

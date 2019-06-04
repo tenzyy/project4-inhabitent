@@ -28,12 +28,14 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 				<div class="fixed-header">
+				
 				<a href="<?php echo home_url(); ?>">
 					<img class ="header-logo logo-green" alt ="logogreen" src="<?php echo get_template_directory_uri() .
 					 	'/assets/images/logos/inhabitent-logo-tent.svg'?>" />
 					 <img class ="header-logo logo-white" alt="logowhite" src="<?php echo get_template_directory_uri() .
 						 '/assets/images/logos/inhabitent-logo-tent-white.svg'?>" />
 				 </a>
+				 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

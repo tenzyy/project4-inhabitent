@@ -410,7 +410,6 @@ input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
   background: #e6e6e6;
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
@@ -465,7 +464,7 @@ textarea {
 a {
   color: black; }
   a:visited {
-    color: #f0e4d1; }
+    color: gray; }
   a:hover, a:focus, a:active {
     color: #f0e4d1; }
   a:focus {
@@ -659,6 +658,19 @@ a {
 .bypostauthor {
   display: block; }
 
+.read-more {
+  font-family: "novecentosanswide", sans-serif;
+  text-transform: uppercase;
+  text-shadow: none;
+  background: transparent;
+  padding: 10px;
+  display: inline-block;
+  font-size: 0.9rem; }
+  .read-more:hover {
+    background-color: #248A83; }
+    .read-more:hover a {
+      color: white; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -728,16 +740,29 @@ body .site-description {
 
 .page-find-us .site-header,
 .blog .site-header,
-.archive .site-header {
+.archive .site-header,
+.single-post .site-header,
+.single-product .site-header,
+.error404 .site-header {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
   width: 100%;
   z-index: 3; }
+  .page-find-us .site-header .logo-white,
+  .blog .site-header .logo-white,
+  .archive .site-header .logo-white,
+  .single-post .site-header .logo-white,
+  .single-product .site-header .logo-white,
+  .error404 .site-header .logo-white {
+    display: none; }
 
 .page-find-us .fixed-header,
 .blog .fixed-header,
-.archive .fixed-header {
+.archive .fixed-header,
+.single-post .fixed-header,
+.single-product .fixed-header,
+.error404 .fixed-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,36 +776,46 @@ body .site-description {
 
 .page-find-us .main-navigation,
 .blog .main-navigation,
-.archive .main-navigation {
+.archive .main-navigation,
+.single-post .main-navigation,
+.single-product .main-navigation,
+.error404 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .page-find-us .header-logo,
 .blog .header-logo,
-.archive .header-logo {
+.archive .header-logo,
+.single-post .header-logo,
+.single-product .header-logo,
+.error404 .header-logo {
   height: 50px;
   width: 50px; }
 
-.page-find-us .logo-white,
-.blog .logo-white,
-.archive .logo-white {
-  display: none; }
-
 .page-find-us .search-form,
 .blog .search-form,
-.archive .search-form {
+.archive .search-form,
+.single-post .search-form,
+.single-product .search-form,
+.error404 .search-form {
   display: inline-block; }
   .page-find-us .search-form .search-field,
   .blog .search-form .search-field,
-  .archive .search-form .search-field {
+  .archive .search-form .search-field,
+  .single-post .search-form .search-field,
+  .single-product .search-form .search-field,
+  .error404 .search-form .search-field {
     display: none;
     background: transparent;
     border: none;
     outline: none; }
   .page-find-us .search-form .search-submit,
   .blog .search-form .search-submit,
-  .archive .search-form .search-submit {
+  .archive .search-form .search-submit,
+  .single-post .search-form .search-submit,
+  .single-product .search-form .search-submit,
+  .error404 .search-form .search-submit {
     background: transparent;
     border: none;
     -webkit-box-shadow: none;
@@ -811,6 +846,9 @@ body .site-description {
   .page-find-us label .required {
     color: #D99054;
     size: 0.5rem; }
+
+.error404 .logo-white {
+  display: none; }
 
 .error404 .content-area {
   padding: 48px; }
@@ -982,7 +1020,7 @@ body .site-description {
 .blog .entry-meta, .archive .entry-meta, .single-post .entry-meta {
   position: absolute;
   bottom: 8px;
-  right: 24%;
+  right: 26%;
   background-color: #248A83; }
 
 .blog .entry-content p, .archive .entry-content p, .single-post .entry-content p {
@@ -1110,25 +1148,166 @@ body .site-description {
 
 .home .site-header,
 .page-about .site-header {
-  position: absolute;
-  background: transparent;
-  width: 100%;
-  z-index: 100; }
-  .home .site-header .logo-green,
-  .page-about .site-header .logo-green {
-    display: none; }
-  .home .site-header .logo-white,
-  .page-about .site-header .logo-white {
-    display: block; }
-  .home .site-header .nav-menu a,
-  .page-about .site-header .nav-menu a {
+  position: absolute; }
+
+.home .fixed-header,
+.page-about .fixed-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw; }
+  .home .fixed-header .nav-menu a,
+  .page-about .fixed-header .nav-menu a {
     color: white; }
-  .home .site-header .fa-search,
-  .page-about .site-header .fa-search {
+  .home .fixed-header .fa-search,
+  .page-about .fixed-header .fa-search {
     color: white; }
+
+.home .logo-green,
+.page-about .logo-green {
+  display: none; }
+
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header-logo {
+  height: 50px;
+  width: 50px; }
+
+.search-form {
+  display: inline-block; }
+  .search-form .search-field {
+    display: none;
+    background: transparent;
+    border: none;
+    outline: none; }
+  .search-form .search-submit {
+    background: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    color: #248A83; }
 
 .home .site-header {
   border: none; }
+
+.home .products {
+  max-width: 1120px;
+  margin: 0 auto; }
+  .home .products h2 {
+    font-family: "novecentosanswide", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2f1339;
+    padding: 30px;
+    font-size: 2.4rem;
+    font-weight: 400; }
+  .home .products .product-terms {
+    max-width: 1200px;
+    display: block;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center; }
+    .home .products .product-terms .product-term {
+      width: 23%;
+      height: 25%;
+      border: 1px solid #e1e1e1;
+      border-top: solid 5px #e1e1e1; }
+      .home .products .product-terms .product-term:hover {
+        border-color: #d99054; }
+      .home .products .product-terms .product-term img {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        width: 70px;
+        height: 70px; }
+      .home .products .product-terms .product-term a {
+        font-family: "novecentosanswide", sans-serif;
+        text-transform: uppercase;
+        border: 1px solid #e1e1e1;
+        padding: 10px;
+        color: white;
+        text-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        text-decoration: none;
+        background: #248A83; }
+        .home .products .product-terms .product-term a:hover {
+          background-color: #24473f; }
+
+.home .fp-journal h1 {
+  font-family: "novecentosanswide", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: #2f1339;
+  padding: 30px;
+  letter-spacing: 2px; }
+
+.home .fp-journal-entries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 1120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto; }
+  .home .fp-journal-entries .journal-entry {
+    margin-right: 1.5rem;
+    width: 40%;
+    height: 400px;
+    border: 1px solid #e1e1e1;
+    border-top: solid 5px #e1e1e1; }
+    .home .fp-journal-entries .journal-entry img {
+      height: 250px; }
+    .home .fp-journal-entries .journal-entry h2 {
+      text-transform: uppercase;
+      font-size: 1rem;
+      color: #248A83;
+      height: 50px; }
+    .home .fp-journal-entries .journal-entry .fp-post-meta {
+      font-size: 0.5rem; }
+  .home .fp-journal-entries .post-title {
+    font-family: "novecentosanswide", sans-serif; }
+  .home .fp-journal-entries a:visited {
+    color: #404040; }
+  .home .fp-journal-entries .button {
+    font-family: "novecentosanswide", sans-serif;
+    text-transform: uppercase;
+    border: 1px solid gray;
+    padding: 10px;
+    display: inline-block;
+    font-size: 0.8rem; }
+    .home .fp-journal-entries .button:hover {
+      background-color: #248A83; }
+      .home .fp-journal-entries .button:hover a {
+        color: white; }
 
 .home .latest-adventure {
   width: 1120px;
@@ -1194,115 +1373,6 @@ body .site-description {
   background-repeat: no-repeat;
   height: 100vh; }
 
-.home .products {
-  max-width: 1120px;
-  margin: 0 auto; }
-  .home .products h2 {
-    font-family: "novecentosanswide", sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    color: #2f1339;
-    padding: 30px;
-    font-size: 2.4rem;
-    font-weight: 400; }
-
-.home .product-terms {
-  max-width: 1200px;
-  display: block;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center; }
-  .home .product-terms .product-term {
-    width: 23%;
-    height: 25%;
-    border: 1px solid #e1e1e1;
-    border-top: solid 5px #e1e1e1; }
-    .home .product-terms .product-term:hover {
-      border-color: #d99054; }
-    .home .product-terms .product-term img {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      width: 70px;
-      height: 70px; }
-    .home .product-terms .product-term a {
-      font-family: "novecentosanswide", sans-serif;
-      text-transform: uppercase;
-      border: 1px solid #e1e1e1;
-      padding: 10px;
-      color: white;
-      text-shadow: none;
-      -webkit-box-shadow: none;
-              box-shadow: none;
-      text-decoration: none;
-      background: #248A83; }
-      .home .product-terms .product-term a:hover {
-        background-color: #24473f; }
-
-.home .fp-journal h1 {
-  font-family: "novecentosanswide", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 400;
-  font-size: 2.4rem;
-  color: #2f1339;
-  padding: 30px;
-  letter-spacing: 2px; }
-
-.home .fp-journal-entries {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 1120px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 auto; }
-  .home .fp-journal-entries .journal-entry {
-    margin-right: 1.5rem;
-    width: 40%;
-    height: 400px;
-    border: 1px solid #e1e1e1;
-    border-top: solid 5px #e1e1e1; }
-    .home .fp-journal-entries .journal-entry img {
-      height: 250px; }
-    .home .fp-journal-entries .journal-entry h2 {
-      text-transform: uppercase;
-      font-size: 1rem;
-      color: #248A83;
-      height: 50px; }
-    .home .fp-journal-entries .journal-entry .fp-post-meta {
-      font-size: 0.5rem; }
-  .home .fp-journal-entries .post-title {
-    font-family: "novecentosanswide", sans-serif; }
-  .home .fp-journal-entries a:visited {
-    color: #404040; }
-  .home .fp-journal-entries .button {
-    font-family: "novecentosanswide", sans-serif;
-    text-transform: uppercase;
-    border: 1px solid gray;
-    padding: 10px;
-    display: inline-block;
-    font-size: 0.8rem; }
-    .home .fp-journal-entries .button:hover {
-      background-color: #248A83; }
-      .home .fp-journal-entries .button:hover a {
-        color: white; }
-
 .single-product article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1345,6 +1415,9 @@ body .site-description {
   .single-post .cat-links :visited,
   .single-post .tags-links :visited {
     color: #248A83; }
+
+.single-post .logo-white {
+  display: none; }
 
 .single-post h3 {
   font-family: "novecentosanswide", sans-serif;
