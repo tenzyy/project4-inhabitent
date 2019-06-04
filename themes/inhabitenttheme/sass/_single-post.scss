@@ -40,8 +40,21 @@
     }
     .submit{
         @include submit-form;
+        display: flex;
+        flex-direction: column;
+        width: 100px;
     }
     .comment-form-cookies-consent{
         display:none;
     }
+}
+.comment-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    .comment-form-comment{width: 100%;}
+    .comment-form-author{width:50%;}
+    .comment-form-email{width:50%;}
+    .comment-form-url, input {width: 100%;}
 }

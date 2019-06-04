@@ -1,53 +1,62 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+body {
+    .site-description{
+       display: none;
 
-
-.site-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom:1px solid #e1e1e1;
-    .logo-green {
-        display: block;
-    }
-    .logo-white {
-        display: none;
-    }
-    .header-search{
-        display:inline-block;
-        .search-form{
-            display:inline-block;
-        .search-field{
-            display:none;
-            background:transparent;
-            border:none;
-            outline:none;
-        }
-        .search-submit{
-            background:transparent;
-            border:none;
-            box-shadow: none;
-            text-shadow:none;
-            color:$color__main;
-        }
-    }
+   }
 }
-}
-
-   //  hero banner
-   .header-logo{
+//    fixed header 
+.page-find-us,
+.blog,
+.archive {
+    .site-header{
+    background-color: hsla(0,0%,100%,.85);
+    border-bottom: 1px solid #e1e1e1;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    }
+ .fixed-header{
+     display: flex;
+     flex-direction: row;
+     justify-content:space-between;
+ }
+ .main-navigation{
+     display: flex ;
+ }
+ .header-logo{
     height: 50px;
     width: 50px;
 }
-body {
-     .site-description{
-        display: none;
-
-    }
+.logo-white {
+    display: none;
 }
+.search-form {
+        display:inline-block;
+    .search-field{
+        display:none;
+        background:transparent;
+        border:none;
+        outline:none;
+    }
+    .search-submit{
+        background:transparent;
+        border:none;
+        box-shadow: none;
+        text-shadow:none;
+        color:$color__main;
+    }
+   
+}
+}
+    
+//  --- end of header ---
 
-// find us page-- 
+
+
+//-- find us page-- 
 .page-find-us {
     .site-main{
       padding:40px;
@@ -56,38 +65,23 @@ body {
         @include main-font-style;
         text-align: left;
         font-size: 1.9rem;
-        font-weight: 600;
-       
-    }
-    h3{
-        @include main-font-style;
-        color: $color__text-screen;
-        margin: 0;
-    }
-    .wpcf7-form{
-        padding:40px;
-        input,
-        textarea {
-            border-radius: 0px;
-            background-color:#f4f4f4;
-            border:1px solid #e1e1e1;
-        }
-        .wpcf7-submit{
-             @include submit-form;
-            }
-        }
-        
+        font-weight: 600;  
+        h3{
+            @include main-font-style;
+            color: $color__text-screen;
+            margin: 0;
+        } 
     }
     label{
         @include main-font-style;
         color:$color__text-screen;
-        margin-bottom: 5px;
+        margin-bottom: .5rem;
         .required{
             color: #D99054;
             size: 0.5rem;
         }
     }      
-    
+}
        
  
 // 404 page
