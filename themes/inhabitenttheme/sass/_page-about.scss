@@ -14,9 +14,8 @@
     border:none;
 }
 .entry-title{
+    @include main-font-style;
     text-align: center;
-    text-transform: uppercase;
-    font-family: $font__second;
     color:white;
     letter-spacing: 1px;
     font-size: 2.4rem;
@@ -27,13 +26,12 @@
     margin-right: auto;
     width: 800px;
         h2{
+            @include main-font-style;
             text-align: center;
             font-size:2.1rem;
             color: $color__text-screen;
-            text-transform: uppercase;
-            font-family: $font__second;
             letter-spacing: 3px;
-           margin-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
         }
     }
 

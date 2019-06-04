@@ -52,21 +52,16 @@ body {
     .site-main{
       padding:40px;
     }
-    h1{
+    h1, h3 {
+        @include main-font-style;
         text-align: left;
-        text-transform: uppercase;
-        font-family: $font__second;
         font-size: 1.9rem;
         font-weight: 600;
        
     }
     h3{
-        text-align: left;
+        @include main-font-style;
         color: $color__text-screen;
-        text-transform: uppercase;
-        font-family: $font__second;
-        font-size: 1.9rem;
-        font-weight: 600;
         margin: 0;
     }
     .wpcf7-form{
@@ -78,25 +73,13 @@ body {
             border:1px solid #e1e1e1;
         }
         .wpcf7-submit{
-            border-radius:none;
-            border:none;
-            box-shadow:none;
-        
-            text-shadow: none;
-            background-color:$color__main;
-            text-transform: uppercase;
-            font-family: $font__second;
-            color:white;
-            padding: 0.7rem 1rem;
-            &:hover{
-                background-color:#24473f;
+             @include submit-form;
             }
         }
         
     }
     label{
-        text-transform: uppercase;
-        font-family: $font__second;
+        @include main-font-style;
         color:$color__text-screen;
         margin-bottom: 5px;
         .required{
@@ -104,7 +87,7 @@ body {
             size: 0.5rem;
         }
     }      
-    }
+    
        
  
 // 404 page
@@ -113,10 +96,10 @@ body {
         padding:48px;
     }
     h1,h2{
+        @include main-font-style;
         text-align: left;
         color: $color__text-screen;
-        text-transform: uppercase;
-        font-family: $font__second;
+    
     }
     
     .page-content{

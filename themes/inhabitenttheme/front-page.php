@@ -8,16 +8,15 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
+<main id="main" class="site-main" role="main">
     <!--  your banner html -->
     <div class= "home-banner">
-    <img class="hero-logo" alt="forest-hero" src="<?php echo get_template_directory_uri() . 
+        <img class="hero-logo" alt="forest-hero" src="<?php echo get_template_directory_uri() . 
                                         '/assets/images/logos/inhabitent-logo-full.svg' ?>" />   
-                                        </div>                               
-	<section class ="products">
-	<h2>Shop Stuff</h2>
-   
-		<!-- product terms and icons -->
+    </div>                               
+	    <section class ="products">
+	        <h2>Shop Stuff</h2>
+             <!-- product terms and icons -->
             <?php 
                 $terms = get_terms( 
                     array( 
@@ -25,7 +24,7 @@ get_header(); ?>
                         'hide_empty' => 0
                     )
                  );
-                 ?>
+            ?>
                 <div class="product-terms">
                     <?php
                     foreach( $terms as $term ):
@@ -51,22 +50,22 @@ get_header(); ?>
  <!-- end of product-terms -->
 
 			<section class="fp-journal">
-                <h1>Inhabitent Journal</h1>
+                    <h1>Inhabitent Journal</h1>
                 
-            <div class="fp-journal-entries"><!-- add a div to style journal entries e.g. with flexbox -->
-                <?php
-                $args = array( 'post_type' => 'post', 'posts_per_page' => 3 );
-                $journal_posts = get_posts( $args ); // returns an array of posts
-                ?>
-                <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>    
+                <div class="fp-journal-entries"><!-- add a div to style journal entries e.g. with flexbox -->
+                    <?php
+                     $args = array( 'post_type' => 'post', 'posts_per_page' => 3 );
+                        $journal_posts = get_posts( $args ); // returns an array of posts
+                    ?>
+                    <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>    
                 
-                <div class="journal-entry">   
+                    <div class="journal-entry">   
                          <!-- Post thumbnail -->
                             <?php if ( has_post_thumbnail() ) : ?>
-                                <div class="thumbnail-wrapper">
-                                    <?php the_post_thumbnail( 'large' ); ?>
-                                </div>
-
+                    
+                            <div class="thumbnail-wrapper">
+                             <?php the_post_thumbnail( 'large' ); ?>
+                    </div>
                             <?php endif; ?>
                                 <!-- comments and dates -->
                             <div class="fp-post-meta">
@@ -85,8 +84,6 @@ get_header(); ?>
                         </div>
                         <?php endforeach; wp_reset_postdata(); ?>
                     </div>
-                    
-                </div>
             </section>
 <!--  end fp-journal-entries -->
             <section class="latest-adventure">

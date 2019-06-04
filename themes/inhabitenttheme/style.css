@@ -775,20 +775,17 @@ body .site-description {
 .page-find-us .site-main {
   padding: 40px; }
 
-.page-find-us h1 {
-  text-align: left;
-  text-transform: uppercase;
+.page-find-us h1, .page-find-us h3 {
   font-family: "novecentosanswide", sans-serif;
+  text-transform: uppercase;
+  text-align: left;
   font-size: 1.9rem;
   font-weight: 600; }
 
 .page-find-us h3 {
-  text-align: left;
-  color: #2f1339;
-  text-transform: uppercase;
   font-family: "novecentosanswide", sans-serif;
-  font-size: 1.9rem;
-  font-weight: 600;
+  text-transform: uppercase;
+  color: #2f1339;
   margin: 0; }
 
 .page-find-us .wpcf7-form {
@@ -812,12 +809,12 @@ body .site-description {
     .page-find-us .wpcf7-form .wpcf7-submit:hover {
       background-color: #24473f; }
 
-.page-find-us label {
-  text-transform: uppercase;
+label {
   font-family: "novecentosanswide", sans-serif;
+  text-transform: uppercase;
   color: #2f1339;
   margin-bottom: 5px; }
-  .page-find-us label .required {
+  label .required {
     color: #D99054;
     size: 0.5rem; }
 
@@ -825,10 +822,10 @@ body .site-description {
   padding: 48px; }
 
 .error404 h1, .error404 h2 {
-  text-align: left;
-  color: #2f1339;
+  font-family: "novecentosanswide", sans-serif;
   text-transform: uppercase;
-  font-family: "novecentosanswide", sans-serif; }
+  text-align: left;
+  color: #2f1339; }
 
 .error404 .page-content ul {
   list-style: none;
@@ -897,9 +894,9 @@ body .site-description {
     color: white; }
 
 .page-about .entry-title {
-  text-align: center;
-  text-transform: uppercase;
   font-family: "novecentosanswide", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
   color: white;
   letter-spacing: 1px;
   font-size: 2.4rem;
@@ -910,11 +907,11 @@ body .site-description {
   margin-right: auto;
   width: 800px; }
   .page-about .about-content h2 {
+    font-family: "novecentosanswide", sans-serif;
+    text-transform: uppercase;
     text-align: center;
     font-size: 2.1rem;
     color: #2f1339;
-    text-transform: uppercase;
-    font-family: "novecentosanswide", sans-serif;
     letter-spacing: 3px;
     margin-bottom: 1.5rem; }
 
@@ -922,7 +919,8 @@ body .site-description {
 .page-find-us *,
 .error404 *,
 .archive *,
-.search * {
+.search *,
+.single-post * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -930,7 +928,8 @@ body .site-description {
 .page-find-us .site,
 .error404 .site,
 .archive .site,
-.search .site {
+.search .site,
+.single-post .site {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -944,7 +943,8 @@ body .site-description {
 .page-find-us .site-content,
 .error404 .site-content,
 .archive .site-content,
-.search .site-content {
+.search .site-content,
+.single-post .site-content {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -956,40 +956,42 @@ body .site-description {
 .page-find-us .content-area,
 .error404 .content-area,
 .archive .content-area,
-.search .content-area {
+.search .content-area,
+.single-post .content-area {
   width: 75%; }
 
 .blog .widget-area,
 .page-find-us .widget-area,
 .error404 .widget-area,
 .archive .widget-area,
-.search .widget-area {
+.search .widget-area,
+.single-post .widget-area {
   width: 25%; }
 
-.blog .content-area, .archive .content-area {
+.blog .content-area, .archive .content-area, .single-post .content-area {
   padding: 48px; }
 
-.blog .entry-header, .archive .entry-header {
+.blog .entry-header, .archive .entry-header, .single-post .entry-header {
   position: relative; }
 
-.blog .entry-title, .archive .entry-title {
+.blog .entry-title, .archive .entry-title, .single-post .entry-title {
   position: absolute;
   top: 15px;
   padding: 15px;
   font-family: "novecentosanswide", sans-serif;
   width: 50%;
   background-color: #248A83; }
-  .blog .entry-title a, .archive .entry-title a {
+  .blog .entry-title a, .archive .entry-title a, .single-post .entry-title a {
     color: white;
     text-transform: uppercase; }
 
-.blog .entry-meta, .archive .entry-meta {
+.blog .entry-meta, .archive .entry-meta, .single-post .entry-meta {
   position: absolute;
   bottom: 8px;
   right: 24%;
   background-color: #248A83; }
 
-.blog .entry-content p, .archive .entry-content p {
+.blog .entry-content p, .archive .entry-content p, .single-post .entry-content p {
   width: 80%; }
 
 .post-type-archive-product .site-content {
@@ -1133,10 +1135,10 @@ body .site-description {
   margin: 0 auto;
   height: 600px; }
   .home .latest-adventure h1 {
+    font-family: "novecentosanswide", sans-serif;
+    text-transform: uppercase;
     text-align: center;
     color: #2f1339;
-    text-transform: uppercase;
-    font-family: "novecentosanswide", sans-serif;
     padding: 30px;
     font-size: 2.4rem;
     font-weight: 400; }
@@ -1196,10 +1198,10 @@ body .site-description {
   max-width: 1120px;
   margin: 0 auto; }
   .home .products h2 {
+    font-family: "novecentosanswide", sans-serif;
+    text-transform: uppercase;
     text-align: center;
     color: #2f1339;
-    text-transform: uppercase;
-    font-family: "novecentosanswide", sans-serif;
     padding: 30px;
     font-size: 2.4rem;
     font-weight: 400; }
@@ -1234,26 +1236,26 @@ body .site-description {
       width: 70px;
       height: 70px; }
     .home .product-terms .product-term a {
+      font-family: "novecentosanswide", sans-serif;
+      text-transform: uppercase;
       border: 1px solid #e1e1e1;
       padding: 10px;
-      font-family: "novecentosanswide", sans-serif;
       color: white;
       text-shadow: none;
       -webkit-box-shadow: none;
               box-shadow: none;
-      text-transform: uppercase;
       text-decoration: none;
-      background: #248a83; }
+      background: #248A83; }
       .home .product-terms .product-term a:hover {
         background-color: #24473f; }
 
 .home .fp-journal h1 {
-  text-align: center;
+  font-family: "novecentosanswide", sans-serif;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 400;
   font-size: 2.4rem;
   color: #2f1339;
-  font-family: "novecentosanswide", sans-serif;
   padding: 30px;
   letter-spacing: 2px; }
 
@@ -1281,7 +1283,7 @@ body .site-description {
     .home .fp-journal-entries .journal-entry h2 {
       text-transform: uppercase;
       font-size: 1rem;
-      color: #248a83;
+      color: #248A83;
       height: 50px; }
     .home .fp-journal-entries .journal-entry .fp-post-meta {
       font-size: 0.5rem; }
@@ -1290,14 +1292,14 @@ body .site-description {
   .home .fp-journal-entries a:visited {
     color: #404040; }
   .home .fp-journal-entries .button {
+    font-family: "novecentosanswide", sans-serif;
+    text-transform: uppercase;
     border: 1px solid gray;
     padding: 10px;
     display: inline-block;
-    font-family: "novecentosanswide", sans-serif;
-    text-transform: uppercase;
     font-size: 0.8rem; }
     .home .fp-journal-entries .button:hover {
-      background-color: #248a83; }
+      background-color: #248A83; }
       .home .fp-journal-entries .button:hover a {
         color: white; }
 
@@ -1335,3 +1337,66 @@ body .site-description {
     font-size: 0.9rem;
     font-family: "novecentosanswide", sans-serif;
     text-transform: uppercase; }
+
+.single-post .cat-links,
+.single-post .tags-links {
+  font-family: "novecentosanswide", sans-serif;
+  text-transform: uppercase; }
+  .single-post .cat-links :visited,
+  .single-post .tags-links :visited {
+    color: #248A83; }
+
+.single-post h3 {
+  font-family: "novecentosanswide", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 2px; }
+
+.single-post .comment-reply-link {
+  color: #248A83; }
+
+.single-post .comment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .single-post .comment-body .comments-list li {
+    list-style: none; }
+  .single-post .comment-body img {
+    border-radius: 50%; }
+
+.single-post label {
+  font-family: "novecentosanswide", sans-serif;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 200;
+  color: #2f1339; }
+
+.single-post .media-share-btn button {
+  background: transparent;
+  text-align: center;
+  padding-bottom: 10px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0px;
+  font-size: 0.9rem;
+  font-family: "novecentosanswide", sans-serif;
+  text-transform: uppercase; }
+
+.single-post .submit {
+  border-radius: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  background-color: #248A83;
+  text-transform: uppercase;
+  font-family: "novecentosanswide", sans-serif;
+  color: white;
+  padding: 0.7rem 1rem; }
+  .single-post .submit:hover {
+    background-color: #24473f; }
+
+.single-post .comment-form-cookies-consent {
+  display: none; }

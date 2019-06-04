@@ -1,0 +1,47 @@
+.single-post{
+    .cat-links,
+    .tags-links{
+        @include main-font-style;
+        :visited{color:$color__main;
+
+        } 
+    }
+//  comment area
+        h3{
+            @include main-font-style;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+        .comment-reply-link{
+            color:$color__main;            
+        }
+        .comment-body{
+            display: flex;
+           .comments-list{
+               li {
+                list-style: none;
+                 }
+             }
+            img{
+                border-radius: 50%;
+            }
+        }
+       label{
+           @include main-font-style;
+           display: flex;
+           font-weight: 200;
+           color: $color__text-screen;
+       } 
+    .media-share-btn{
+        button{
+            @include share-button;
+        }
+      
+    }
+    .submit{
+        @include submit-form;
+    }
+    .comment-form-cookies-consent{
+        display:none;
+    }
+}

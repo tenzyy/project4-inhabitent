@@ -28,15 +28,7 @@
         }
         .media-share-btn{
             button{
-                background:transparent;
-                text-align: center;
-                padding-bottom: 10px;
-                color: black;
-                border: 1px solid black;
-                border-radius: 0px;
-                font-size:0.9rem;
-                font-family: $font__second;
-                text-transform: uppercase;
+                @include share-button;
                 }
             }
     }

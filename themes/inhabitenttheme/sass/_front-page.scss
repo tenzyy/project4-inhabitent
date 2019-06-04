@@ -24,10 +24,9 @@
     margin: 0 auto;
     height: 600px;
     h1 {
+      @include main-font-style;
       text-align: center;
       color: $color__text-screen;
-      text-transform: uppercase;
-      font-family: $font__second;
       padding: 30px;
       font-size: 2.4rem;
       font-weight: 400;
@@ -95,10 +94,9 @@
     max-width: 1120px;
     margin: 0 auto;
     h2 {
+      @include main-font-style;
       text-align: center;
       color: $color__text-screen;
-      text-transform: uppercase;
-      font-family: $font__second;
       padding: 30px;
       font-size: 2.4rem;
       font-weight: 400;
@@ -125,15 +123,14 @@
         height: 70px;
       }
       a {
+        @include main-font-style;
         border: 1px solid #e1e1e1;
         padding: 10px;
-        font-family: $font__second;
         color: white;
         text-shadow: none;
         box-shadow: none;
-        text-transform: uppercase;
         text-decoration: none;
-        background: #248a83;
+        background:$color__main;
         &:hover{
           background-color:#24473f;
       }
@@ -142,12 +139,11 @@
   }
   .fp-journal {
     h1 {
+      @include main-font-style;
       text-align: center;
-      text-transform: uppercase;
       font-weight: 400;
       font-size: 2.4rem;
       color: $color__text-screen;
-      font-family: $font__second;
       padding: 30px;
       letter-spacing: 2px;
     }
@@ -172,7 +168,7 @@
       h2 {
         text-transform: uppercase;
         font-size: 1rem;
-        color:#248a83;
+        color:$color__main;
         height:50px;
       }
       .fp-post-meta {
@@ -189,14 +185,13 @@
       }
     }
     .button {
+      @include main-font-style;
       border: 1px solid gray;
       padding: 10px;
       display: inline-block;
-      font-family: $font__second;
-      text-transform: uppercase;
       font-size: 0.8rem;
       &:hover{
-        background-color:#248a83;
+        background-color:$color__main;
         a{
           color: white;
         }

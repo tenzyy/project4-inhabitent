@@ -12,3 +12,33 @@
 	margin-right: 0 auto;
 
 }
+@mixin share-button{
+	background:transparent;
+                text-align: center;
+                padding-bottom: 10px;
+                color: black;
+                border: 1px solid black;
+                border-radius: 0px;
+                font-size:0.9rem;
+                font-family: $font__second;
+                text-transform: uppercase;
+}
+@mixin submit-form{
+			border-radius:none;
+            border:none;
+            box-shadow:none;
+            text-shadow: none;
+            background-color:$color__main;
+            text-transform: uppercase;
+            font-family: $font__second;
+            color:white;
+            padding: 0.7rem 1rem;
+            &:hover{
+                background-color:#24473f;
+}
+}
+@mixin main-font-style{
+	font-family: $font__second;
+	text-transform: uppercase;
+}
+
