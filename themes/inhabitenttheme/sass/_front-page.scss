@@ -100,7 +100,7 @@
      }
   }
   // --- end of products logo and terms 
-  .fp-journal {
+
     h1 {
       @include main-font-style;
       text-align: center;
@@ -110,7 +110,7 @@
       padding: 30px;
       letter-spacing: 2px;
     }
-  }
+  
   .fp-journal-entries {
     display: flex;
     flex-direction: row;

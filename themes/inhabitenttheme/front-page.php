@@ -9,7 +9,7 @@ get_header(); ?>
  <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
     <!--  your banner html -->
-    <div class= "home-banner">
+        <div class= "home-banner">
         <img class="hero-logo" alt="forest-hero" src="<?php echo get_template_directory_uri() . 
         '/assets/images/logos/inhabitent-logo-full.svg' ?>" />   
     </div>                               
@@ -32,7 +32,7 @@ get_header(); ?>
                             <img src="<?php echo get_template_directory_uri() . 
                                         '/assets/images/product-type-icons/' .
                                          $term->slug . '.svg'
-                                        ?>" />    
+                                        ?>" alt ="product-icon-pics"/>    
                             <p><?php echo $term->description; ?></p>
                             <p>
                                 <a href="<?php echo get_term_link( $term ); ?>">
@@ -47,8 +47,8 @@ get_header(); ?>
                
         </section>
  <!-- end of product-terms -->
-                     <h1>Inhabitent Journal</h1>
-                
+                    
+ <h1>Inhabitent Journal</h1>
                     <div class="fp-journal-entries"><!-- add a div to style journal entries e.g. with flexbox -->
                         <?php
                         $args = array( 'post_type' => 'post', 'posts_per_page' => 3 );
@@ -93,6 +93,5 @@ get_header(); ?>
             </div>
 	</main><!-- #main -->
 </div><!-- #primary -->
-
 
 <?php get_footer(); ?>

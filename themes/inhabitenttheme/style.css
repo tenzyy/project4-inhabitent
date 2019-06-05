@@ -945,7 +945,8 @@ body .site-description {
     font-size: 2.1rem;
     color: #2f1339;
     letter-spacing: 3px;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    text-transform: uppercase; }
 
 .blog *,
 .page-find-us *,
@@ -1041,10 +1042,11 @@ body .site-description {
 .post-type-archive-product .product-header {
   width: 100%;
   border-bottom: 1px dashed #c3c3c3;
-  margin: 20px;
+  margin: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
@@ -1255,7 +1257,7 @@ body .site-description {
         .home .products .product-terms .product-term a:hover {
           background-color: #24473f; }
 
-.home .fp-journal h1 {
+.home h1 {
   font-family: "novecentosanswide", sans-serif;
   text-transform: uppercase;
   text-align: center;

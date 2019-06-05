@@ -28,11 +28,13 @@
     width: 800px;
         h2{
             @include main-font-style;
+   
             text-align: center;
             font-size:2.1rem;
             color: $color__text-screen;
             letter-spacing: 3px;
             margin-bottom: 1.5rem;
+            text-transform: uppercase;
         }
     }
 

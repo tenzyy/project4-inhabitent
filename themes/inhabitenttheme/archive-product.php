@@ -62,7 +62,6 @@ get_header(); ?>
 					<!-- .entry-content -->
 				</article><!-- #post-## -->
 				
-			
 
 				<?php endwhile; ?>
 			</div><!-- shop area -->

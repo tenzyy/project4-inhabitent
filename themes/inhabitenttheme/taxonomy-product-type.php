@@ -12,7 +12,7 @@ get_header(); ?>
 		<div class="taxonomy-header">
 		<header class="taxonomy-page">
 	
-		<h1><?php the_archive_title( '<h1 class="page-title">', '</h1>' );?></h1>
+	<?php the_archive_title( '<h1 class="page-title">', '</h1>' );?>
 		<p>Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
 		<?php if ( have_posts() ) : ?>
 
@@ -34,7 +34,7 @@ get_header(); ?>
 				<div class="product-meta"
 				<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 				<div class="dots"></div>
-				<?php echo CFS()->get( 'product_price' ); ?></p>
+				<?php echo CFS()->get( 'product_price' ); ?>
 				</div>
 			<!-- .entry-content -->
 			</article><!-- #post-## -->	
