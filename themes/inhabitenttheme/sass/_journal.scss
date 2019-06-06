@@ -3,6 +3,9 @@
 .blog, .archive, .single-post {
     .content-area {
        padding:48px;
+       img{
+           width: 80%;
+       }
     }
 
     .entry-header {

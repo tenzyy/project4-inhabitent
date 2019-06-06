@@ -4,8 +4,12 @@
 body {
     .site-description{
        display: none;
-
    }
+     
+   h1, h2 {
+    @include main-font-style;
+    font-size: 1.8rem;
+}
 }
 //    fixed header 
 .page-find-us,
@@ -13,18 +17,22 @@ body {
 .archive,
 .single-post,
 .single-product,
-.error404 {
+.error404,
+.search {
+    .site-content{
+        padding-top: 60px;
+    }
     .site-header{
     background-color: hsla(0,0%,100%,.85);
     border-bottom: 1px solid #e1e1e1;
     position: fixed;
+    transition: top .5s linear;
     width: 100%;
     z-index: 3;
     .logo-white{
         display: none;
         }
     }
-
  .fixed-header{
      display: flex;
      flex-direction: row;
@@ -83,20 +91,20 @@ body {
             color: #D99054;
             size: 0.5rem;
         }
-    }      
+
+    }  
+    .wpcf7-submit{
+        @include submit-form;
+    }    
 }
        
 // 404 page
 .error404{
-    .logo-white{display: none;}
     .content-area{
         padding:48px;
     }
-    h1,h2{
-        @include main-font-style;
-        text-align: left;
-        color: $color__text-screen;
-    
+   
+     
     }
     .page-content{
         ul{
@@ -111,5 +119,22 @@ body {
             display: none;
         }
     }
+
+//SEARCH PAGE
+
+.search {
+  
+       a{
+        color: $color__main;
+        letter-spacing: 2px;
+       } 
+        p{
+        font-size: 1rem;
+        line-height: 1.75;
+       }
+       .entry-meta{
+        @include main-font-style;   
+       }
+    
 }
 

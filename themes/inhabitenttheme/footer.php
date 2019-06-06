@@ -31,7 +31,7 @@
 			<p><b>Sunday</b>: Closed</p>
 		</div>
 		<div class="footerlogo">
-			<img class ="header-logo logo-green" alt="footerlogo" src="<?php echo get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-text.svg'?>" />
+			<img class ="footer-logo" alt="footerlogo" src="<?php echo get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-text.svg'?>" />
 		</div>
 
 		<div class="copyright">
